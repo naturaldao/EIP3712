@@ -1,4 +1,4 @@
-# EIP3712
+# EIP3712 Info
 ## version
 ### v1.0.0
 ## log
