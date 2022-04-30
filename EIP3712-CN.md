@@ -1,8 +1,8 @@
 
 ---
 eip: 3712
-title: Standard for Multiple Types of Fungible-Tokens
-description: standardize single contracts that support multiple fungible tokens
+title: Standard for Multiple Types of Fungible-Tokens（多种批量同质化通证标准）
+description: 多重同质化通证标准是允许一个合约同时管理多个同质化通证的标准。
 author: Zhao Li (@1999321), Derek Zhou (@zhous), Yuefei Tan (@whtyfhas)
 discussions-to: https://ethereum-magicians.org/t/eip-3712-standard-for-multiple-types-of-fungible-tokens/6912
 status: Draft
@@ -13,7 +13,7 @@ created: 2021-08-01
 
 ## Abstract（简介）
 
-多重同质化通证标准弥补了[ERC-20](./eip-20.md)和[ERC-1155](./eip-1155.md)的不足之处。在交易多个同质化通证时gas消耗减少，支持多个接收方对多个通证的交易`transferBatchMul`与及多个发送方、多个接收方、多个通证一一对应的交易`transferFromBatchMul`。在授权方面分两种授权：单一同质化通证的数量授权`approve(uint256 id,address spender, uint256 amount)`、全局授权`approve(address spender,bool _status)`。
+多种批量同质化通证标准弥补了[ERC-20](./eip-20.md)和[ERC-1155](./eip-1155.md)的不足之处。在交易多个同质化通证时gas消耗减少，支持多个接收方对多个通证的交易`transferBatchMul`与及多个发送方、多个接收方、多个通证一一对应的交易`transferFromBatchMul`。在授权方面分两种授权：单一同质化通证的数量授权`approve(uint256 id,address spender, uint256 amount)`、全局授权`approve(address spender,bool _status)`。
 
 ## Motivation（动机）
 
